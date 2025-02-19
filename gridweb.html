@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .boxes{
+            display: grid;
+            grid-template-columns: 225px 225px 225px;
+            grid-template-rows: 225px 225px 225px;
+            
+          
+        }
+        .box{
+            margin:5px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px black;
+        }
+        .box1{
+            grid-area:1/1/3/2;
+            background-color: aliceblue;
+            padding:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .box2{
+            grid-area:1/2/2/3;
+            background-image: url(https://th.bing.com/th/id/OIP.2y_pE5SBPkKCYxqVIwsfYQHaE8?w=227&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-size: cover;
+        }
+        .box3{
+            grid-area:1/3/2/4;
+            background-image: url(https://th.bing.com/th/id/OIP.CMx6YKWFiZiQ2qqqrfsxsAHaEo?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-size: cover;
+        }
+        .box4{
+            grid-area:2/2/3/3;
+            background-color: azure;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .box5{
+            grid-area:2/3/3/4;
+            background-image: url(https://th.bing.com/th/id/OIP.OalaXqB9hYVo4LPdIzCK3QHaEo?w=290&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap:10px;
+        }
+        .box6{
+            grid-area:3/1/4/2;
+            background-image: url(https://img.freepik.com/premium-photo/mountain-landscape-with-sun_1089395-47.jpg);
+            background-size: cover;
+        }
+        .box7{
+            grid-area:3/2/4/4;
+            background-image: url(https://png.pngtree.com/background/20230528/original/pngtree-the-path-up-to-a-mountain-top-with-a-path-picture-image_2777832.jpg);
+            background-size: cover;
+            
+        }
+       button{
+            background-color: orange;
+            font-size: 13px;
+            padding:5px;
+            border:none;
+            cursor: pointer;
+       }
+       .ima{
+        padding: 10px;
+        gap: 20px;
+       }
+       .ima1{
+        position: relative;
+        left:30px;
+        border-radius: 50%;
+        width:120px;
+        height:120px;
+        background-image: url(https://th.bing.com/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?rs=1&pid=ImgDetMain);
+        background-size: cover;
+       }
+       .mat{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family:cursive;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HIKING & TREKING</h1>
+        <div class="boxes">
+            <div class="box box1">
+                <div class="ima">
+                    <div class="ima1">
+                    </div>
+                    <div class="mat">
+                <h2 style="text-align: center;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-bottom: 10px;">GET INSPIRED</h2>
+                <p>An excellent level of physical and mental stamina will be required.</p>
+                <p>Expect to travel through mostly uninhabited area where supplies will be hard or impossible to acquire.</p>
+            </div>
+            </div>
+            </div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4">
+                <h2>BEST PLACES FOR HIKING TOURS</h2>
+            </div>
+            <div class="box box5">
+                <h2 style="color:white">Himalaya</h2>
+                <i style="color:white">Elevation:8849 m</i>
+                <p style="color:white">India's one of the most popular trekking destination in the world</p>
+                    <button style="color:white">READ MORE</button>
+            </div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+        </div>
+    </div>
+</body>
+</html>
